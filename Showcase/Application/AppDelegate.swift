@@ -12,6 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var rootViewController: UITabBarController {
+        return self.window?.rootViewController as! UITabBarController
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -42,9 +46,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        // Use a framework to pattern match... the hostname...
+        
+        switch(url.absoluteString) {
+            case "showcase://first": self.rootViewController.selectedIndex = 0
+            case "showcase://second": self.rootViewController.selectedIndex = 1
+            case "showcase://first/detail":
+                self.rootViewController.selectedIndex = 0
+                if let selectedViewController = self.rootViewController.selectedViewController as? UINavigationController,
+                    let firstFlowControllerRouteExtension = selectedViewController.visibleViewController as? FirstFlowControllerRouteExtension {
+                    firstFlowControllerRouteExtension.presentDetail()
+                }
+            default: break;
+        }
+        
         return true
     }
-
-
 }
 
