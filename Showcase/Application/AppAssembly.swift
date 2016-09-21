@@ -16,9 +16,8 @@ extension SwinjectStoryboard {
     
     class func setup() {
         
-        defaultContainer.registerForStoryboard(FirstViewController.self) { r, c in
-            c.setup = true
-            c.presenter = FirstPresenter()
+        defaultContainer.registerForStoryboard(FirstViewController.self) { r, c in            
+            c.presenter = FirstPresenter(userInterface: c, flowController: c)
         }
         
         defaultContainer.registerForStoryboard(SecondViewController.self) { r, c in

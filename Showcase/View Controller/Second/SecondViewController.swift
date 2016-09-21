@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, SecondPresenterDelegate {
     
     var presenter: SecondPresenter!
 

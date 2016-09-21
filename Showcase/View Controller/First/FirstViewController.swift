@@ -8,25 +8,26 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, FirstPresenterDelegate {
     
-    var presenter: FirstPresenter!
+    var presenter: FirstPresenterProtocol!
     
-    var setup: Bool = false
-
+    @IBOutlet weak var navExampleButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-                
-        if self.setup {
-            self.view.backgroundColor = UIColor.yellow
-        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func navExampleAction(_ sender: UIButton) {
+        self.presenter.presentDetail()
+    }
+    
+    @IBAction func presentManualAction(_ sender: AnyObject) {
+        self.presenter.presentModal()
+    }
 }
 

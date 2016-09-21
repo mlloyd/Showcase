@@ -8,6 +8,31 @@
 
 import UIKit
 
-class FirstPresenter: NSObject {
+protocol FirstPresenterDelegate: class {
+    
+}
 
+protocol FirstPresenterProtocol {
+    func presentDetail()
+    func presentModal()
+}
+
+class FirstPresenter: FirstPresenterProtocol {
+
+    unowned let userInterface:  FirstPresenterDelegate
+    unowned let flowController: FirstFlowControllerRouteExtension
+    
+    init(userInterface: FirstPresenterDelegate,
+         flowController: FirstFlowControllerRouteExtension) {
+        self.userInterface = userInterface
+        self.flowController = flowController
+    }
+    
+    func presentDetail() {
+        self.flowController.presentDetail()
+    }
+    
+    func presentModal() {
+        self.flowController.presentModal()
+    }
 }

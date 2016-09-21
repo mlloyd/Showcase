@@ -8,6 +8,14 @@
 
 import UIKit
 
-class SecondPresenter: NSObject {
+protocol SecondPresenterDelegate {
+    
+}
+
+protocol SecondPresenterProtocol {
+    
+}
+
+class SecondPresenter: SecondPresenterProtocol {
 
 }
