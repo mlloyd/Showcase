@@ -29,10 +29,10 @@ class FirstPresenter: FirstPresenterProtocol {
     }
     
     func presentDetail() {
-        self.flowController.presentDetail()
+        self.flowController.presentDetailSegue()
     }
     
     func presentModal() {
-        self.flowController.presentModal()
+        self.flowController.presentDetailProgrammatic()
     }
 }

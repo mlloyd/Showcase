@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.rootViewController.selectedIndex = 0
                 if let selectedViewController = self.rootViewController.selectedViewController as? UINavigationController,
                     let firstFlowControllerRouteExtension = selectedViewController.visibleViewController as? FirstFlowControllerRouteExtension {
-                    firstFlowControllerRouteExtension.presentDetail()
+                    firstFlowControllerRouteExtension.presentDetailSegue()
                 }
             default: break;
         }

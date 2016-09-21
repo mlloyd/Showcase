@@ -68,7 +68,7 @@
         <!--Detail Storyboard ViewController-->
         <scene sceneID="LFM-7B-JWp">
             <objects>
-                <viewController title="Detail Storyboard ViewController" id="7Rl-bE-Dfh" sceneMemberID="viewController">
+                <viewController title="Detail Storyboard ViewController" id="7Rl-bE-Dfh" customClass="DetailViewController" customModule="Showcase" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aY8-dn-4Jo"/>
                         <viewControllerLayoutGuide type="bottom" id="PQu-Zv-K8W"/>

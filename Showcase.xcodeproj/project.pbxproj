@@ -19,6 +19,8 @@
 		C10173691D92AA7600FA5ECD /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10173681D92AA7600FA5ECD /* FirstPresenter.swift */; };
 		C101736B1D92AA8600FA5ECD /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101736A1D92AA8600FA5ECD /* SecondPresenter.swift */; };
 		C101736D1D92C04F00FA5ECD /* FirstFlowControllerRouteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101736C1D92C04F00FA5ECD /* FirstFlowControllerRouteExtension.swift */; };
+		C10173701D92CEBF00FA5ECD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101736F1D92CEBF00FA5ECD /* DetailViewController.swift */; };
+		C10173721D92CF0900FA5ECD /* DetailFlowControllerRouteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10173711D92CF0900FA5ECD /* DetailFlowControllerRouteExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		C10173681D92AA7600FA5ECD /* FirstPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
 		C101736A1D92AA8600FA5ECD /* SecondPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
 		C101736C1D92C04F00FA5ECD /* FirstFlowControllerRouteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstFlowControllerRouteExtension.swift; sourceTree = "<group>"; };
+		C101736F1D92CEBF00FA5ECD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C10173711D92CF0900FA5ECD /* DetailFlowControllerRouteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailFlowControllerRouteExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		C10173591D92AA0300FA5ECD /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C101736E1D92CEAD00FA5ECD /* Detail */,
 				C10173641D92AA6600FA5ECD /* First */,
 				C10173621D92AA6600FA5ECD /* Second */,
 			);
@@ -141,6 +146,15 @@
 				C101736C1D92C04F00FA5ECD /* FirstFlowControllerRouteExtension.swift */,
 			);
 			path = First;
+			sourceTree = "<group>";
+		};
+		C101736E1D92CEAD00FA5ECD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C101736F1D92CEBF00FA5ECD /* DetailViewController.swift */,
+				C10173711D92CF0900FA5ECD /* DetailFlowControllerRouteExtension.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +253,11 @@
 				C101735E1D92AA0300FA5ECD /* AppDelegate.swift in Sources */,
 				C101736B1D92AA8600FA5ECD /* SecondPresenter.swift in Sources */,
 				C101735D1D92AA0300FA5ECD /* AppAssembly.swift in Sources */,
+				C10173721D92CF0900FA5ECD /* DetailFlowControllerRouteExtension.swift in Sources */,
 				C10173691D92AA7600FA5ECD /* FirstPresenter.swift in Sources */,
 				C10173671D92AA6600FA5ECD /* FirstViewController.swift in Sources */,
 				C101736D1D92C04F00FA5ECD /* FirstFlowControllerRouteExtension.swift in Sources */,
+				C10173701D92CEBF00FA5ECD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

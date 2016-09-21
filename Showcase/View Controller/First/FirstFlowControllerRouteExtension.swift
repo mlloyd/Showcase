@@ -9,24 +9,30 @@
 import UIKit
 
 protocol FirstFlowControllerRouteExtension: class {
-    func presentDetail()
+    func presentDetailSegue()
+    func presentDetailProgrammatic()
     func presentModal()
 }
 
 extension FirstViewController: FirstFlowControllerRouteExtension {
     
-    func presentDetail() {
-        self.performSegue(withIdentifier: "presentDetail", sender: nil)
+    func presentDetailSegue() {
+        self.performSegue(withIdentifier: "presentDetail", sender: UIColor.yellow)
     }
     
-    func presentModal() {
+    func presentDetailProgrammatic() {
         let viewController = UIViewController()
         viewController.title = "ProgrammaticViewController"
         viewController.view.backgroundColor = UIColor.cyan
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
+    func presentModal() {
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("prepare")
+        segue.destination.view.backgroundColor = (sender as! UIColor)
     }
 }
