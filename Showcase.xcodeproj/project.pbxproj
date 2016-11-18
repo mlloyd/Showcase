@@ -21,6 +21,7 @@
 		C101736D1D92C04F00FA5ECD /* FirstFlowControllerRouteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101736C1D92C04F00FA5ECD /* FirstFlowControllerRouteExtension.swift */; };
 		C10173701D92CEBF00FA5ECD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C101736F1D92CEBF00FA5ECD /* DetailViewController.swift */; };
 		C10173721D92CF0900FA5ECD /* DetailFlowControllerRouteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10173711D92CF0900FA5ECD /* DetailFlowControllerRouteExtension.swift */; };
+		C1EE70DF1DDF17BF00CE03E4 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EE70DE1DDF17BF00CE03E4 /* Third.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C101736C1D92C04F00FA5ECD /* FirstFlowControllerRouteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstFlowControllerRouteExtension.swift; sourceTree = "<group>"; };
 		C101736F1D92CEBF00FA5ECD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C10173711D92CF0900FA5ECD /* DetailFlowControllerRouteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailFlowControllerRouteExtension.swift; sourceTree = "<group>"; };
+		C1EE70DE1DDF17BF00CE03E4 /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				C101736E1D92CEAD00FA5ECD /* Detail */,
 				C10173641D92AA6600FA5ECD /* First */,
 				C10173621D92AA6600FA5ECD /* Second */,
+				C1EE70DD1DDF17B200CE03E4 /* Third */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -157,6 +160,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		C1EE70DD1DDF17B200CE03E4 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				C1EE70DE1DDF17BF00CE03E4 /* Third.storyboard */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,11 +196,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Martin Lloyd";
 				TargetAttributes = {
 					C10173361D92A61700FA5ECD = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 85HBV3MXDJ;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -219,6 +232,7 @@
 			files = (
 				C10173471D92A61700FA5ECD /* LaunchScreen.storyboard in Resources */,
 				C10173441D92A61700FA5ECD /* Assets.xcassets in Resources */,
+				C1EE70DF1DDF17BF00CE03E4 /* Third.storyboard in Resources */,
 				C10173421D92A61700FA5ECD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +315,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -323,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -351,6 +366,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -367,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -380,6 +396,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				DEVELOPMENT_TEAM = 85HBV3MXDJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -396,6 +414,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				DEVELOPMENT_TEAM = 85HBV3MXDJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
